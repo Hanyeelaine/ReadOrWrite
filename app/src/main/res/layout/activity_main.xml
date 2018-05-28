@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.elaine.readorwrite.MainActivity">
+
+    <TextView android:text="请选择："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_marginTop="21dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/button">
+
+        <RadioButton
+            android:id="@+id/aaaID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            />
+
+        <RadioButton
+            android:id="@+id/bbbID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/textOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="————请输入文本————"
+        android:gravity="center"
+        android:textColorHint="#99CCFF"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/radioGroupID"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="写入"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="34dp"
+        android:layout_below="@+id/textOne"
+        android:layout_toStartOf="@+id/button2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="85dp"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        />
+
+
+</RelativeLayout>
